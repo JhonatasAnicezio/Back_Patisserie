@@ -10,6 +10,4 @@ COPY . .
 
 EXPOSE 3001
 
-ENTRYPOINT ["npm", "run", "build", "&&", "npm"]
-
-CMD [ "start" ]
+CMD ["npm", "run", "build"]
