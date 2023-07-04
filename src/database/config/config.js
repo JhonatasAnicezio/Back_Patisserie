@@ -3,9 +3,9 @@ require('dotenv/config');
 const config = {
 	username: process.env.MYSQLUSER || 'root',
 	password: process.env.MYSQLPASSWORD || 'senha-mysql',
-	database: 'DB_USER_PATISSERIE',
+	database: process.env.MYSQLDATABASE || 'DB_USER_PATISSERIE',
 	host: process.env.MYSQLHOST || 'localhost',
-	port: Number(process.env.MYSQLPORT) || 3306,
+	port: process.env.MYSQLPORT  || 3306,
 	dialect: 'mysql',
 	dialectOptions: {
 		timezone: 'Z',
@@ -13,4 +13,8 @@ const config = {
 	logging: false,
 };
 
-module.exports = config;
+module.exports = {
+  development: config,
+  test: config,
+  production: config,
+};
