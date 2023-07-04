@@ -8,7 +8,6 @@ class User extends Model {
 	declare email: string;
 	declare phone: string;
 	declare password: string;
-	declare image: string;
 }
 
 User.init({
@@ -36,10 +35,6 @@ User.init({
 	},
 	role: {
 		allowNull: false,
-		type: STRING,
-	},
-	image: {
-		allowNull: true,
 		type: STRING,
 	},
 }, {
