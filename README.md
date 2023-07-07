@@ -65,7 +65,7 @@ Lembrando que você precisa de um banco MySQL para rodar a api
 
 #### Retorna todos os usuarios
 
-```http
+```bash
   GET /user
 ```
 
@@ -75,7 +75,7 @@ Lembrando que você precisa de um banco MySQL para rodar a api
 
 #### Retorna os dados do usuário de acordo com o token
 
-```http
+```bash
   GET /user/me
 
   header: {
@@ -89,7 +89,7 @@ Lembrando que você precisa de um banco MySQL para rodar a api
 
 #### Retorna um token referente ao usuário do login
 
-```http
+```bash
   POST /user/login
 
   body: {
@@ -105,7 +105,7 @@ Lembrando que você precisa de um banco MySQL para rodar a api
 
 #### Realiza o cadastro de um novo usuário e em seguida retorna um token refente ao usuário do login
 
-```http
+```bash
   POST /user/
 
   body: {
@@ -125,7 +125,7 @@ Lembrando que você precisa de um banco MySQL para rodar a api
 
 #### Remove o um usuário de acordo com o seu id
 
-```http
+```bash
   DELETE /api/user/${id}
 ```
 
@@ -135,7 +135,7 @@ Lembrando que você precisa de um banco MySQL para rodar a api
 
 #### Atualiza a role de um usuário de acordo com seu id
 
-```http
+```bash
   PUT /api/user/${id}
 
   body: {
