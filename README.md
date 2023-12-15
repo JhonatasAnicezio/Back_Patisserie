@@ -10,7 +10,7 @@ As rotas disponíveis na API incluem cadastro de usuário, login de usuário e a
 
   - Node.js
   - TypeScript
-  - Squelize
+  - Sequelize
   - Arquitetura MSC
   - MySQL
 ## Rodando localmente
